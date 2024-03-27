@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма активации тестового доступа</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="node_modules/intl-tel-input/build/js/utils.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.min.css">
+</head>
+
+<body>
+    <h2>Спасибо за установку!</h2>
+    <h3>Остался последний шаг</h3>
+    <h4>Активация тестового доступа</h4>
+    <div class="form-container">
+        <h5>Для активации 14-дневного тестового доступа заполните форму ниже.</h5>
+        <h6><strong style="font-weight: 800;">Внимание!</strong> В целях безопасности обслуживание будет осуществляться
+            только по указанному номеру телефона.</h6>
+        <form action="#" method="post">
+            <div id="phone-input">
+                <div class="country-code">
+                    <input type="tel" id="phone" placeholder="Введите номер телефона*">
+                </div>
+            </div>
+            <input type="text" id="name" name="name" required placeholder="Как к вам обращаться?*">
+            <select id="role" name="role" required title="Выберите вашу роль в компании">
+                <option value="" disabled selected hidden>Ваша роль в компании?*</option>
+                <option value="Собственник">Собственник</option>
+                <option value="Руководитель отдела продаж">Руководитель отдела продаж</option>
+                <option value="Технический специалист">Технический специалист</option>
+                <option value="Интегратор amoCRM">Интегратор amoCRM</option>
+            </select>
+            <div class="checkbox-container">
+                <input type="checkbox" checked id="help" name="help">
+                <label for="help" class="custom-label">Хочу получить бесплатную помощь в настройке</label>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div class="checkbox-container" style="flex: 1.5;">
+                    <input type="checkbox" id="promo" name="promo">
+                    <label for="promo" class="custom-label">У меня есть промокод</label>
+                </div>
+                <input type="text" id="promo-input" style=" display:none; flex: 1;" placeholder="Введите промокод">
+            </div>
+            <form id="myForm" action="yourpage.html">
+                <input type="submit" value="Активировать доступ">
+            </form>
+            <h7>Есть вопросы?</h7>
+            <h8>Напишите нам!</h8>
+        </form>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
